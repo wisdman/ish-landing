@@ -1,0 +1,27 @@
+/*
+ * Theme config
+ */
+
+:root {
+  /* === Colors configuration === */
+
+  --color-dark: #090b0e;
+  --color-light: #0e111e;
+  --color-white: #f0f0f0;
+  --color-text: #88a1b4;
+  --color-main: #1b9cb3;
+  --color-active: #1993a8;
+  --color-warning: #b93838;
+
+  /* === Global gap value === */
+  --gap: 20px;
+  --header-height: 40px;
+}
+
+/* ===Viewport media queries config === */
+
+/* Tablet */
+@custom-media --media-tablet (min-width: 600px);
+
+/* Desktop */
+@custom-media --media-desktop (min-width: 900px);

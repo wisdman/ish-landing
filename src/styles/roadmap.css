@@ -1,0 +1,139 @@
+.roadmap__image img {
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  width: 100px;
+  height: 1300px;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  @media (--media-tablet) {
+    width: 150px;
+    height: auto;
+  }
+
+  @media (--media-desktop) {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.roadmap__list {
+  position: relative;
+  margin-top: var(--font-size_6);
+}
+
+.roadmap__item {
+  position: relative;
+  margin-top: var(--font-size_2);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  max-width: 50%;
+}
+
+.roadmap__item:first-child {
+  margin-top: 0;
+}
+
+.roadmap__item:nth-child(odd) {
+  margin-right: 0;
+  text-align: left;
+  padding-left: 50px;
+
+  @media (--media-tablet) {
+    padding-left: 75px;
+  }
+
+  @media (--media-desktop) {
+    padding-left: 100px;
+  }
+}
+
+.roadmap__item:nth-child(even) {
+  margin-left: 0;
+  text-align: right;
+  padding-right: 50px;
+
+  @media (--media-tablet) {
+    padding-right: 75px;
+  }
+
+  @media (--media-desktop) {
+    padding-right: 100px;
+  }
+}
+
+.roadmap__item h2 {
+  font-size: var(--font-size_-1);
+  line-height: var(--gr-size_1);
+  font-weight: 600;
+
+  @media (--media-tablet) {
+    font-size: var(--font-size_-1);
+  }
+
+  @media (--media-desktop) {
+    font-size: var(--font-size_1);
+  }
+}
+
+.roadmap__item p {
+  margin-top: 0;
+  font-size: var(--font-size_-2);
+  color: var(--color-white);
+  text-align: inherit;
+
+  @media (--media-tablet) {
+    font-size: var(--font-size_-1);
+  }
+
+  @media (--media-desktop) {
+    font-size: var(--font-size_0);
+  }
+}
+
+.roadmap__point {
+  user-select: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+}
+
+.roadmap__item:nth-child(odd) .roadmap__point {
+  left: 0;
+  @media (--media-tablet) {
+    left: 25px;
+  }
+
+  @media (--media-desktop) {
+    left: 50px;
+  }
+}
+
+.roadmap__item:nth-child(even) .roadmap__point {
+  right: 0;
+  @media (--media-tablet) {
+    right: 25px;
+  }
+
+  @media (--media-desktop) {
+    right: 50px;
+  }
+}
+
+.roadmap__item:nth-child(odd) p,
+.roadmap__item:nth-child(odd) h2 {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.roadmap__item:nth-child(even) p,
+.roadmap__item:nth-child(even) h2 {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+

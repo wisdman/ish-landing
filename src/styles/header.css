@@ -1,0 +1,22 @@
+.header {
+  display: block;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 99;
+
+  width: 100%;
+  height: calc(var(--header-height) + var(--gap) * 2);
+  padding: var(--gap);
+
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, var(--color-dark) 0%, var(--color-dark) 95%, transparent 100%);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  user-select: none;
+}
+
+.header__logo,
+.header__logo img {
+  height: 100%;
+}

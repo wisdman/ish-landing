@@ -1,0 +1,60 @@
+{
+  "name": "ish-landing",
+  "version": "0.1.0",
+  "author": "Dmitriy Poliakov aka Wisdman <wisdman@ajaw.it> (https://github.com/wisdman)",
+  "contributors": [
+    "Dmitriy Poliakov aka Wisdman <wisdman@ajaw.it> (https://github.com/wisdman)"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wisdman/ish-landing.git"
+  },
+  "homepage": "https://ish.earth/",
+  "bugs": "https://github.com/wisdman/ish-landing/issues",
+  "lang": "en-US",
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Edge versions",
+    "last 2 Firefox versions",
+    "last 2 iOS versions",
+    "last 2 Safari versions"
+  ],
+  "scripts": {
+    "clean": "rm -rf ./dist/*",
+    "build:dev": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' webpack --mode=development",
+    "build": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' webpack --mode=production",
+    "start": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' webpack-dev-server --color --info=false",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/html-webpack-plugin": "^2.30.3",
+    "@types/node": "^10.3.3",
+    "@types/webpack": "^4.4.0",
+    "@types/youtube": "0.0.33",
+    "autoprefixer": "^8.6.2",
+    "awesome-typescript-loader": "^5.0.0",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-csso": "^3.0.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.5",
+    "postcss-nested": "^3.0.0",
+    "svgo": "^1.0.5",
+    "svgo-loader": "^2.1.0",
+    "ts-node": "^6.1.1",
+    "typescript": "^2.9.2",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.7",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "tingle.js": "^0.13.2"
+  }
+}

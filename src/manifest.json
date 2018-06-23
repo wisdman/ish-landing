@@ -1,0 +1,26 @@
+{
+  "name": "International science hub",
+  "short_name": "ISH",
+
+  "start_url": "/",
+
+  "lang": "en-US",
+
+  "icons": [
+    {
+      "src": "/svg/favicon.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/png/favicon.png",
+      "size": "192x192",
+      "type": "image/png"
+    }
+  ],
+
+  "theme_color": "#231F20",
+  "background_color": "#231F20",
+
+  "display": "standalone",
+  "orientation": "any"
+}

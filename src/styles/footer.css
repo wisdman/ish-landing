@@ -1,0 +1,29 @@
+.footer {
+  background-image: linear-gradient(to right, var(--color-light) 0%, var(--color-main) 50%, var(--color-light) 100%);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+
+  padding: var(--font-size_4) var(--font-size_2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer__logo {
+  display: block;
+  height: 35px;
+
+  user-select: none;
+}
+
+.footer__logo img {
+  display: block;
+  height: 100%;
+}
+
+.footer__copy {
+  margin-top: var(--font-size_3);
+  font-size: var(--font-size_-1);
+}

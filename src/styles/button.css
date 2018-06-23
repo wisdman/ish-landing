@@ -1,0 +1,115 @@
+.button {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: content-box;
+
+  --margin: var(--gap, 0px);
+  --height: 24px;
+
+  height: calc(var(--height) + 4px);
+
+  margin-left: calc(var(--margin) / 2);
+  margin-right: calc(var(--margin) / 2);
+  margin-top: calc(var(--height) / 2 + var(--margin));
+  margin-bottom: calc(var(--height) / 2);
+
+  padding: 0;
+
+  background-color: transparent;
+  background-image: none;
+  border: 0 none;
+
+  color: inherit;
+
+  font-family: inherit;
+  font-size: inherit;
+
+  text-decoration: none;
+  text-align: left;
+  white-space: nowrap;
+
+  cursor: pointer;
+  appearance: none;
+  user-select: none;
+}
+
+.button__icon {
+  display: flex;
+  position: relative;
+  margin: 0;
+
+  height: calc(var(--height) * 2);
+  width: calc(var(--height) * 2 * 88 / 100);
+  flex: 0 0 calc(var(--height) * 2 * 88 / 100);
+}
+
+.button__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.button__icon use {
+  fill: var(--color-main);
+  transition: 0.1s ease fill;
+}
+
+.button__icon use:first-child {
+  fill: var(--color-dark);
+}
+
+.button:hover .button__icon use:first-child {
+  fill: var(--color-main);
+}
+
+.button:hover .button__icon use:last-child {
+  fill: var(--color-white);
+}
+
+.button__value {
+  display: block;
+  box-sizing: content-box;
+
+  padding: 0 1em;
+
+  height: var(--height);
+  line-height: var(--height);
+
+  background-color: transparent;
+  background-clip: padding-box;
+  background-origin: padding-box;
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--color-main);
+  border-radius: 4px;
+
+  transition: 0.1s ease background-color, 0.1s ease border-color;
+}
+.button__value:empty {
+  display: none;
+}
+
+.button__icon ~ .button__value,
+.button:hover .button__value {
+  background-color: var(--color-main);
+}
+
+.button__icon ~ .button__value {
+  border-left-color: transparent;
+  border-left-width: 3px;
+  border-radius: 0 4px 4px 0;
+  margin-left: -4px;
+}
+
+/* === Special button === */
+
+.button--bye {
+  --height: 38px;
+}
+
+.button--bye .button__value {
+  border-radius: 6px;
+  font-size: var(--font-size_1);
+}

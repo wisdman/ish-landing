@@ -1,0 +1,98 @@
+.advisor__list {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.advisor {
+  margin-top: var(--font-size_5);
+  margin-left: var(--font-size_0);
+  margin-right: var(--font-size_0);
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.advisor h2 {
+  margin-top: var(--font-size_-2);
+  font-size: var(--font-size_0);
+}
+
+.advisor h3 {
+  font-size: var(--font-size_-1);
+}
+
+.advisor h2,
+.advisor h3 {
+  text-align: center;
+}
+
+.advisor__photo {
+  order: 1;
+  width: 100%;
+  position: relative;
+}
+
+.advisor__image {
+  width: 100%;
+  height: auto;
+}
+
+.advisor__image img {
+  width: 100%;
+}
+
+.advisor__link {
+  position: absolute;
+  bottom: 6px;
+  left: 14px;
+}
+
+.advisor__link ~ .advisor__link {
+  left: auto;
+  right: 14px;
+}
+
+.advisor__tooltip {
+  position: absolute;
+  width: 200px;
+  bottom: calc(100% + var(--height) / 2 + 5px);
+  left: -20px;
+
+  padding: var(--font-size_0);
+
+  background: var(--color-dark);
+  box-shadow: 0 1px 10px var(--color-light);
+  border-radius: 6px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  white-space: normal;
+  user-select: text;
+  cursor: default;
+
+  transition: 0.5s ease opacity, 0.5s linear visibility;
+}
+
+.advisor__link:hover .advisor__tooltip,
+.advisor__link:active .advisor__tooltip {
+  opacity: 0.97;
+  visibility: visible;
+}
+
+.advisor__tooltip p {
+  font-size: var(--font-size_-1);
+}
+
+.advisor__info {
+  order: 2;
+  flex: 0 1 auto;
+}
+
+

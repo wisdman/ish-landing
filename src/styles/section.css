@@ -1,0 +1,63 @@
+.section {
+  position: relative;
+  box-sizing: border-box;
+  padding: var(--font-size_6) var(--font-size_2);
+
+  background-color: var(--color-dark);
+  background-image: linear-gradient(130deg, var(--color-dark) 0%, var(--color-light) 100%);
+  background-repeat: no-repeat;
+}
+
+.section h1,
+.section--crowdsale h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section--crowdsale {
+  min-height: 100vh;
+  padding-top: calc(var(--header-height) + var(--gap) * 3);
+
+  background-image: url("../svg/cord-grid.svg"), url("../img/bg-top-map.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section--promo {
+  background-image: linear-gradient(to right, var(--color-light) 0%, var(--color-main) 50%, var(--color-light) 100%),
+    linear-gradient(to right, var(--color-light) 0%, var(--color-main) 50%, var(--color-light) 100%),
+    linear-gradient(130deg, var(--color-dark) 0%, var(--color-light) 100%);
+  background-size: 100% 2px, 100% 2px, 100% 100%;
+  background-position: 0 0, 0 100%, 0 0;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section--promo h1,
+.section--promo p {
+  padding-right: var(--font-size_2);
+  padding-left: var(--font-size_2);
+}
+
+.section--roadmap {
+  overflow: hidden;
+}
+
+.section--roadmap h1 {
+  position: relative;
+  text-shadow: 0 0 0 10px var(--color-dark);
+}

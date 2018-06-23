@@ -1,0 +1,98 @@
+:root {
+  /* === Golden ratio size configuration === */
+
+  --gr-size_6: 4.236; /* 1.618^(6/2) */
+  --gr-size_5: 3.33; /* 1.618^(5/2) */
+  --gr-size_4: 2.618; /* 1.618^(4/2) */
+  --gr-size_3: 2.058; /* 1.618^(3/2) */
+  --gr-size_2: 1.618; /* 1.618^(2/2) */
+  --gr-size_1: 1.272; /* 1.618^(1/2) */
+  --gr-size_0: 1;
+  --gr-size_-1: 0.786; /* 1.618^(-1/2) */
+  --gr-size_-2: 0.618; /* 1.618^(-2/2) */
+  --gr-size_-3: 0.486; /* 1.618^(-3/2) */
+  --gr-size_-4: 0.382; /* 1.618^(-4/2) */
+  --gr-size_-5: 0.3; /* 1.618^(-5/2) */
+  --gr-size_-6: 0.236; /* 1.618^(-6/2) */
+  --gr-size_-7: 0.185; /* 1.618^(-7/2) */
+
+  --font-size_6: calc(var(--gr-size_6) * 1rem);
+  --font-size_5: calc(var(--gr-size_5) * 1rem);
+  --font-size_4: calc(var(--gr-size_4) * 1rem);
+  --font-size_3: calc(var(--gr-size_3) * 1rem);
+  --font-size_2: calc(var(--gr-size_2) * 1rem);
+  --font-size_1: calc(var(--gr-size_1) * 1rem);
+  --font-size_0: calc(var(--gr-size_0) * 1rem);
+  --font-size_-1: calc(var(--gr-size_-1) * 1rem);
+  --font-size_-2: calc(var(--gr-size_-2) * 1rem);
+  --font-size_-3: calc(var(--gr-size_-3) * 1rem);
+
+  --text-max-width: 610px;
+}
+
+h1,
+.h1 {
+  display: block;
+  max-width: var(--text-max-width);
+  margin: 0;
+  padding: 0;
+
+  font-size: var(--font-size_3);
+  font-weight: 400;
+}
+
+h2,
+.h2 {
+  display: block;
+  max-width: var(--text-max-width);
+  margin: 0;
+  padding: 0;
+
+  font-size: var(--font-size_1);
+  font-weight: 500;
+}
+
+h3,
+.h3 {
+  display: block;
+  max-width: var(--text-max-width);
+  margin: 0;
+  padding: 0;
+
+  font-size: var(--font-size_0);
+  font-weight: 400;
+}
+
+p,
+.p {
+  display: block;
+  max-width: var(--text-max-width);
+
+  margin: 0 auto;
+  padding: 0;
+  /* text-align: left; */
+  line-height: var(--gr-size_2);
+
+  font-size: var(--font-size_0);
+  font-weight: 400;
+
+  color: var(--color-text);
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+p + p {
+  margin-top: var(--font-size_2);
+}
+
+h2 + h3 {
+  margin-top: var(--font-size_-2);
+}
+
+h1 a,
+h2 a,
+h3 a,
+p a {
+  color: var(--color-main);
+}
