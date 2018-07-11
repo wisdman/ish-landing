@@ -3,19 +3,17 @@
   pointer-events: none;
   position: absolute;
   width: 100px;
-  height: 1300px;
+  height: auto;
   top: 0px;
   left: 50%;
   transform: translate(-50%, 0);
 
   @media (--media-tablet) {
     width: 150px;
-    height: auto;
   }
 
   @media (--media-desktop) {
-    width: 200px;
-    height: auto;
+    width: 220px;
   }
 }
 
