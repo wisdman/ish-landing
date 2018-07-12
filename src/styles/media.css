@@ -77,14 +77,14 @@
 }
 
 @media (min-width: 538px) {
-  .media__list::before,
-  .media__list::after {
-    display: none;
+  .media__list::before {
+    display: flex;
   }
 }
 
 @media (min-width: 700px) {
-  .media__list::before {
+  .media__list::before,
+  .media__list::after {
     display: flex;
   }
 }
@@ -92,6 +92,6 @@
 @media (min-width: 862px) {
   .media__list::before,
   .media__list::after {
-    display: flex;
+    display: none;
   }
 }

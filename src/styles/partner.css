@@ -66,28 +66,27 @@
   display: none;
 }
 
-@media (min-width: 376px) {
+/* @media (min-width: 376px) {
   .partner__list::before {
     display: flex;
   }
-}
+} */
 
 @media (min-width: 538px) {
   .partner__list::before,
   .partner__list::after {
-    display: none;
-  }
-}
-
-@media (min-width: 700px) {
-  .partner__list::before {
     display: flex;
   }
 }
 
+/* @media (min-width: 700px) {
+  .partner__list::before {
+    display: flex;
+  }
+} */
+
 @media (min-width: 862px) {
-  .partner__list::before,
-  .partner__list::after {
+  .partner__list::before {
     display: flex;
   }
 }
