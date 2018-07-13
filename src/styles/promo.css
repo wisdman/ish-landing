@@ -1,10 +1,8 @@
 .promo__info {
-  order: 1;
   text-align: center;
 }
 
 .promo__video {
-  order: 2;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -45,7 +43,6 @@
 }
 
 .promo__rating-list {
-  order: 3;
   width: 100%;
   max-width: calc(900px + var(--font-size_0) * 2);
   margin: 0 auto;

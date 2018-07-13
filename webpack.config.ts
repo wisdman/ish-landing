@@ -19,6 +19,7 @@ export default {
     timer: PATH("./src/scripts/timer.ts"),
     promo: PATH("./src/scripts/promo.ts"),
     buy: PATH("./src/scripts/buy.ts"),
+    platform: PATH("./src/scripts/platform.ts"),
   },
 
   resolve: {
