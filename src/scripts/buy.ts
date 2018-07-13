@@ -35,7 +35,6 @@ declare const CROWDSALE_ADDRESS: string
   modal.setContent(`
     <h1 class="buy__title uppercase">Buy Science Tokens</h1>
     <p>To sell <a href="//etherscan.io/token/0x2cf2d4919e639b25b806126eb5c97d043ffb0a70#tokenInfo" target="_blank" rel="noopener">Science Tokens (ST)</a>, we are use the special <a href="//etherscan.io/address/${CROWDSALE_ADDRESS}#code" target="_blank" rel="noopener">Crowdsale smart-contract</a>. After making the ethereum payment to this address, Science Token (ST) will be sent automatically to the wallet from which you made the payment.</p>
-    <p><b>Send at least 1 ETH to receive your ScienceToken (ST)</b></p>
     <img class="buy__qr-code" src="//chart.googleapis.com/chart?chs=250x250&cht=qr&chl=${CROWDSALE_ADDRESS}" aria-hidden="true">
     <div class="buy__eth-adress">
       <span>${CROWDSALE_ADDRESS}</span>
