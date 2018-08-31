@@ -135,7 +135,7 @@ export default {
       APP_NAME: JSON.stringify(PKG.name),
       APP_VERSION: JSON.stringify(PKG.version),
       METRIKA_ID: JSON.stringify(49101970),
-      END_DATE: JSON.stringify("2018-09-01"),
+      END_DATE: JSON.stringify("2019-01-01"),
       CROWDSALE_ADDRESS: JSON.stringify("0x09541e5e03e3f10730fee50131168a99c5ce15c1"),
     }),
     new HtmlWebpackPlugin({
