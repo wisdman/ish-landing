@@ -159,6 +159,9 @@ export default {
       {
         from: PATH("./src/robots.txt"),
       },
+      {
+        from: PATH("./src/offer.html"),
+      },
     ]),
   ],
 
