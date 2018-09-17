@@ -2,15 +2,17 @@
   width: 90%;
   max-width: calc(var(--text-max-width) + 96px);
 
+  overflow: hidden;
+
   @media (max-width: 540px) {
     width: 100%;
   }
 }
 
 .buy .tingle-modal-box__content {
-  @media (max-width: 540px) {
-    padding: var(--font-size_1);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .buy .tingle-modal__close {
@@ -110,4 +112,78 @@ p.buy__warning {
 
 .buy__copy-adress path {
   fill: var(--color-white);
+}
+
+.buy__tab__input {
+  display: none;
+}
+
+.buy__tab__label {
+  order: 1;
+  font-size: var(--font-size_1);
+
+  width: 50%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eee;
+}
+
+.buy__tab__label svg {
+  height: 48px;
+}
+
+.buy__tab__tab {
+  order: 2;
+  display: none;
+  flex: 0 0 100%;
+  width: 100%;
+
+  padding: 3rem;
+
+  @media (max-width: 540px) {
+    padding: var(--font-size_1);
+  }
+}
+
+.buy__tab__input:checked + .buy__tab__label + .buy__tab__tab {
+  display: block;
+}
+
+.buy__tab__input:checked + .buy__tab__label {
+  background: #fff;
+}
+
+.buy__tab__tab table {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.buy__tab__tab table td {
+  padding: 0.5rem 0;
+}
+
+.buy__tab__tab select,
+.buy__tab__tab input {
+  font-size: var(--font-size_0);
+  border: solid 1px #31708f;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+}
+
+.buy__tab__tab input {
+  padding: 0 0.5em;
+}
+
+.buy__tab__tab input[type="image"] {
+  width: auto;
+  height: auto;
+  border: 0 none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
