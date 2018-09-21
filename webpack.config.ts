@@ -162,6 +162,9 @@ export default {
       {
         from: PATH("./src/offer.html"),
       },
+      {
+        from: PATH("./src/static"),
+      },
     ]),
   ],
 
