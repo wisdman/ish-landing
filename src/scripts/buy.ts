@@ -72,6 +72,8 @@ declare const CROWDSALE_ADDRESS: string
     </label>
     <div class="buy__tab__tab tab-paypal">
       <h1 class="buy__title uppercase">Buy Science Tokens By USD</h1>
+      <p>To sell <a href="//etherscan.io/token/0x2cf2d4919e639b25b806126eb5c97d043ffb0a70#tokenInfo" target="_blank" rel="noopener">Science Tokens (ST)</a>, we are use PayPal payment form with email notification. We check email regularly, but send tokens at the end of each week. Please be patient, we see your payment and will send you tokens and email notification as soon as the time comes!</p>
+      <p>If you have any questions, please contact us by email: <a href="mailto:sales@ish.earth">sales@ish.earth</a></p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" autocomplete="off">
         <input type="hidden" name="cmd" value="_s-xclick">
         <table>
