@@ -52,6 +52,13 @@ h2,
   font-weight: 500;
 }
 
+h2.technical-work,
+.h2.technical-work {
+  font-size: var(--font-size_3);
+  font-weight: 400;
+  color: var(--color-main);
+}
+
 h3,
 .h3 {
   display: block;
