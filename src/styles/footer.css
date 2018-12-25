@@ -16,6 +16,9 @@
   height: 35px;
 
   user-select: none;
+
+  margin-bottom: 35px;
+  height: 45px;
 }
 
 .footer__logo img {

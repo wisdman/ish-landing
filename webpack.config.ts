@@ -15,11 +15,11 @@ export default {
 
   entry: {
     metrika: PATH("./src/scripts/metrika.js"),
-    crowdsale: PATH("./src/scripts/crowdsale.ts"),
-    timer: PATH("./src/scripts/timer.ts"),
-    promo: PATH("./src/scripts/promo.ts"),
-    buy: PATH("./src/scripts/buy.ts"),
-    platform: PATH("./src/scripts/platform.ts"),
+    // crowdsale: PATH("./src/scripts/crowdsale.ts"),
+    // timer: PATH("./src/scripts/timer.ts"),
+    // promo: PATH("./src/scripts/promo.ts"),
+    // buy: PATH("./src/scripts/buy.ts"),
+    // platform: PATH("./src/scripts/platform.ts"),
   },
 
   resolve: {
